@@ -7,6 +7,8 @@ from sympy import symbols, Eq, linsolve, Matrix
 # be 1 if action k is available in state i, 0 otherwise
 # transition_mat[i][j][k] should be list of lists of lists and is the probability of 
 # transition to state j from state i when action k is chosen.
+# Also, the function in transtion_probability_matrix_converter.py can be used when giving
+# transition probabilty matrices as input.
 # Extra argument of initial policy can be given as:
 # initial_policy = [k1, k2] which means k1 is chosen at state 0 and k2 is chosen at state 1.
 
