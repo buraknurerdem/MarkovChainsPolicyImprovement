@@ -89,7 +89,7 @@ def policy_improvement(cost_mat, available_actions_mat, transition_mat, **kwargs
         if policy == policy_new:
             break
         
-        policy = policy_new
+        policy = policy_new.copy()
     
     out = output(policy, solutions[0][0])
     return(out)
